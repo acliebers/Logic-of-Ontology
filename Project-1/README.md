@@ -304,5 +304,5 @@ In this model, the first sentence is false while the second sentence is true.
 	that the tableau proof generator seems to want to decompose all statements into literals or their negation in order to find the relevant contradiction, 
 	whereas my strategy in the natural deduction proof for (a) was to show that on the basis of assuming the negation of the consequent of the conditional, I 
 	could derive the negation of the antecedent of the conditional itself, a sentence which does not appear in the tableau proof at all. Meanwhile, the precise 
-	strategy of the tableau proof seems to be to look for all possible truth assignments and make sure that none of the truth assignments compatible with the 
-	assumption can lead to the assumption being true.
+	strategy of the tableau proof seems to be to look for all possible truth assignments and make sure that all of the truth assignments compatible with the 
+	assumption lead to a contradiction.
