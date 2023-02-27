@@ -14,7 +14,7 @@ Tip #4: Work together as a team.
   (a)  PP that says that x is a proper part of y
         I can't do  this because I don't have the resources to discuss individuals or identity. 
   (b)  iPP that says that y is a proper part of x
-        I can't do  this because I don't have the resources to discuss individuals or identity. 
+        I can't do  this because I don't have the resources to discuss individuals or identity, and I can't simply use inverse relations to change the... position(?) of the variables in the concept. 
   (c)  iP that says that y has x as part 
         iP ≡ ∀part_of-.C
   (d)  O that says that x overlaps y
@@ -32,7 +32,7 @@ Tip #4: Work together as a team.
 (b) ∃x∀y∃z(R(x,y) ∧ R(x,z) ∧ R(y,z))
     I can't translate this because I don't have the resources to talk about individuals or identity in ALCI.
 (c) ∀y(R(x, y) → ∃x(R(y, x) ∧ ∀y(R(x, y) → A(y))))
-     I can't translate this because even if we imagine that this is a wff and the unbound variable, x, is implicitly bound by a universal quantifier, I don't think I can translate the second conjunct into a statement of DL, since while it should look something like ∀r.(¬C 
+     I can't translate this because even if we imagine that this is a wff and the unbound variable, x, is implicitly bound by a universal quantifier, I don't think I can translate the second conjunct into a statement of DL, since while it should look something like ∀r.(¬C..., I can't seem to appripriately nest roles within ALCI concepts in the same way that I can nest relations within statements of FOL. 
 
 (d) (∀y)(R(x, y) → A(y)) ∧ (∃y)(R(x, y) ∧ B(y))
     This is not a wff, so I can't translate it. 
@@ -73,14 +73,26 @@ Even though the sentence is kind of boring and uninformative, it's hard to disag
 
 Now, every logic has theorems. Theorems are simply further statements that you can get by applying a logic's vocabulary and rules for symbol combination to the logic's axioms (or to other theorems). And, on the flip side, a non-theorem is just a statement using the logic's vocabulary in an appropriate way, but which you cannot obtain by applying that logic's rules for symbol combination to the logic's axioms (or any further theorems). 
 
-A model of a logic is like an interpretation of that logical system, a set of imaginary objects and relations between them that we can imagine in order to better understand and visualize how the logical system operates. 
+A model of a logic is like an interpretation of that logical system, a set of imaginary objects and relations between them that we can imagine in order to better understand and visualize how the logical system operates. Models can be used to show certain things about logical systems, like whether a certain statement is true or false, given a set of assumptions and the rules of the system. If we can use a model to show that the statement is false, that statement is falsified by the model. 
+
+So, a logic has the finite model property if every non-theorem (each statement that cannot be derived from the logic's axioms) can be shown to be false by some model of the system.
 
 
 ```
 
 8. Following up on the preceding , explain the _tree model property_. Be sure to provide a simple example and explain when the property might be important, and when it is not so important. 
+```
+A logic has the tree model property if a 
+
+
+```
 
 9. Open the Protege editor and create object properties for each of the role names that you constructed in question 1. You should have at least 6 object properties. Assert in the editor that P is a sub-property of O, that P is transitive, and that O is symmetric. Next, add individuals - a, b, c - to the file and assert that c is part of a and that c overlaps b. Running the reasoner should reveal - highlighted in yellow if you select the individual c - that c overlaps a. Using the discussion in the selections from chapter 4 of the Baader, et. al. text as a guide, explain how the tableau algorithm is generating this inference. Also, provide a screenshot of the results of your reasoner run with c highlighted. 
+
+![Project 2 Screenshot](https://user-images.githubusercontent.com/71295089/221626614-ded7500d-dd50-4b5f-b63c-c1d3126eb9de.png)
+
+
+
 
 10. Following up on your work in question 9, adjust/add/remove/etc. object properties and individuals in your Protege file so that when you run a reasoner in Protege, you return the following consequences: 
 ```
@@ -90,3 +102,5 @@ A model of a logic is like an interpretation of that logical system, a set of im
   (e) There are no parts between a and g in common
 ```
 Provide a screenshot of your results here. 
+
+
